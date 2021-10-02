@@ -8,11 +8,11 @@ function Profile() {
     <div className="Profile">
       <div className="profile">
         <div className="description">
-          <img
+          {/* <img
             src="https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
             alt="Аватар пользователя"
             className="avatar"
-          />
+          /> */}
           <p className="name">Petra Marica</p>
           <p className="tag">@pmarica</p>
           <p className="location">Salvador, Brasil</p>
