@@ -1,6 +1,8 @@
 import styles from './Profile.module.css';
 import user from './user.json';
 
+console.log(styles);
+console.log(user);
 function Profile() {
   return (
     <div className="Profile">
@@ -35,12 +37,14 @@ function Profile() {
   );
 }
 
-<Profile
+{
+  /* <Profile
   name={user.name}
   tag={user.tag}
   location={user.location}
   avatar={user.avatar}
   stats={user.stats}
-/>;
+/>; */
+}
 
 export default Profile;
