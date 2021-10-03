@@ -1,32 +1,25 @@
 import StatisticalData from './statistical-data.json';
+import './Statistics.module.css';
 
-function Statistics(props) {
+export default function Statistics(props) {
+  //  const { id, label, percentage } = props;
+
   return (
     <div className="Statistics">
-      <section className="statistics">
-        <h2 className="title">Upload stats</h2>
+      {StatisticalData.title === true ? (
+        <h2 className="title">{StatisticalData.title}</h2>
+      ) : (
+        ' '
+      )}
 
-        <ul className="stat-list">
-          <li className="item">
-            <span className="label">.docx</span>
-            <span className="percentage">4%</span>
+      <ul className="stat-list">
+        {StatisticalData.map(el => (
+          <li className="item" key={el.id}>
+            <span className="label">{el.label}</span>
+            <span className="percentage">{el.percentage}%</span>
           </li>
-          <li className="item">
-            <span className="label">.mp3</span>
-            <span className="percentage">14%</span>
-          </li>
-          <li class="item">
-            <span className="label">.pdf</span>
-            <span className="percentage">41%</span>
-          </li>
-          <li className="item">
-            <span className="label">.mp4</span>
-            <span className="percentage">12%</span>
-          </li>
-        </ul>
-      </section>
+        ))}
+      </ul>
     </div>
   );
 }
-
-export default Statistics;

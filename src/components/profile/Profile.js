@@ -1,8 +1,8 @@
+import PropTypes from 'prop-types';
 import './Profile.module.css';
 import user from './user.json';
 
 export default function Profile(props) {
-  // const followers = stats.followers;
   const {
     avatar,
     name,
@@ -22,7 +22,7 @@ export default function Profile(props) {
           <p className="location">{location}</p>
         </div>
 
-        <ul className="stats">
+        <ul className="stats " id="stats__list">
           <li>
             <span className="label">Followers </span>
             <span className="quantity">{followers}</span>
@@ -40,3 +40,13 @@ export default function Profile(props) {
     </div>
   );
 }
+
+Profile.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number,
+};
