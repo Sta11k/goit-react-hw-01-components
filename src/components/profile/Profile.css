@@ -9,11 +9,13 @@ img {
   width: 300px;
 }
 
-/* .description {
+.description {
   display: flex;
-  flex-direction: column;
   align-items: center;
-} */
+  justify-content: center;
+  flex-direction: column;
+}
+
 /* 
 #stats__list {
   list-style: none;

@@ -1,4 +1,4 @@
-@import url('./components/profile/Profile.module.css');
+/* @import url('./components/profile/Profile.module.css'); */
 /* @import url('./components/statistics/Statistics.module.css'); */
 
 ul {
@@ -28,9 +28,9 @@ ul {
   border: 2px solid rebeccapurple;
 }
 
-.description {
+/* .description {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
+} */
