@@ -1,10 +1,10 @@
 import './App.css';
-// import './components/profile/Profile.module.css';
-// import './components/statistics/Statistics.module.css';
-
 import Profile from './components/profile/Profile';
 import user from '../src/components/profile/user.json';
-import Statistics from './components/statistics/Statistics';
+import Statistics from './components/Statistics/Statistics';
+import FriendList from './components/friendList/FriendList';
+import friends from './components/friendList/friends.json';
+
 //  import StatisticalData from './components/statistics/Statistics';
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-
       <Statistics />
+      <FriendList friends={friends} />,
     </div>
   );
 }

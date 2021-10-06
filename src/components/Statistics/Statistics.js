@@ -1,5 +1,5 @@
 import StatisticalData from './statistical-data.json';
-import './Statistics.module.css';
+import './Statistics.css';
 
 export default function Statistics(props) {
   //  const { id, label, percentage } = props;

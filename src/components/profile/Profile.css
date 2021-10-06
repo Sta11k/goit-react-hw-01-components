@@ -16,9 +16,11 @@ img {
   flex-direction: column;
 }
 
-/* 
-#stats__list {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-} */
+.profile {
+  max-width: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: aquamarine;
+}
