@@ -20,10 +20,13 @@ td {
   padding-left: 65px;
 }
 
-.switchColor {
+/* .switchColor {
   background-color: red;
+} */
+.color {
+  background-color: rgb(245, 166, 166);
 }
 
-.color {
+.color:nth-child(2n) {
   background-color: rgb(218, 218, 218);
 }
