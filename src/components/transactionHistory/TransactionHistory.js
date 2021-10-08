@@ -13,8 +13,8 @@ export default function TransactionHistory(props) {
       </thead>
 
       <tbody className="tbodyh-history">
-        {transactions.map(el => (
-          <tr key={el.id} className=" switchColor">
+        {transactions.map((el, a, b) => (
+          <tr key={el.id} className="color">
             <td>{el.type}</td>
             <td>{el.amount}</td>
             <td>{el.currency}</td>
