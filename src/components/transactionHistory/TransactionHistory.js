@@ -1,9 +1,9 @@
 import './TransactionHistory.css';
-// import transactions from './transactions.json';
+import transactions from './transactions.json';
 
 export default function TransactionHistory(props) {
   //  const { id, label, percentage } = props;
-
+  //   const { id, type, amount, currency } = props;
   return (
     <table className="transaction-history">
       <thead className="thead-history">
@@ -15,21 +15,23 @@ export default function TransactionHistory(props) {
       </thead>
 
       <tbody className="tbodyh-history">
-        <tr>
-          <td>Invoice</td>
-          <td>125</td>
-          <td>USD</td>
-        </tr>
-        <tr>
-          <td>Withdrawal</td>
-          <td>85</td>
-          <td>USD</td>
-        </tr>
+        {transactions.map(el => (
+          <tr key={el.id}>
+            <td>{el.type}</td>
+            <td>{el.amount}</td>
+            <td>{el.currency}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
     // <div className="TransactionHistory">
     //   <ul className="friend-list">
     //     {friends.map(el => (
+    // <tr>
+    //   <td>Withdrawal</td>
+    //   <td>85</td>
+    //   <td>USD</td>
+    // </tr>
     //       <li className="friend-item" key={el.id}>
     //         {el.isOnline === true ? (
     //           <span className="statusOn">&#x263A;</span>
